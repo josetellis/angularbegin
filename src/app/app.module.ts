@@ -7,6 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ModulesComponent } from './modules/modules.component';
 import { TechnologyComponent } from './technology/technology.component';
+import { FeedbackComponent } from './feedback/feedback.component';
+import {FormsModule} from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -14,11 +16,14 @@ import { TechnologyComponent } from './technology/technology.component';
     HeaderComponent,
     NavbarComponent,
     ModulesComponent,
-    TechnologyComponent
+    TechnologyComponent,
+    FeedbackComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
